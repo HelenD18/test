@@ -1,0 +1,31 @@
+let button = prompt("Input a text");
+function blackSymbols(){
+    if (button.length) <= 3{
+      document.write(button.fontcolor("black"));
+      return false;
+    }
+  return true;
+ }
+ 
+ function greenSymbols(){
+    if (button.length) > 3{
+      document.write(button.fontcolor("green"));
+      return true;
+    }
+  return true;
+ }
+function includeSpecialSymbols() {
+    var iChars = "~`!#$%^&*+=-[]\\\';,/{}|\":<>?";
+
+    for (var i = 0; i < button.length; i++) {
+       if (iChars.indexOf(button.charAt(i)) != -1) {
+           document.write(button.fontcolor("red"))
+           return false;
+       }
+    }
+    return true;
+}
+
+greenSymbols(button);
+blackSymbols(button);
+includeSpecialSymbols(button);
